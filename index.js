@@ -57,4 +57,8 @@ app.delete("/api/users/:userId", verifyToken, (req, res) => {
   }
 });
 
+app.get("/" , (req,res) => {
+  res.send("Hello World")
+})
+
 app.listen(port, () => console.log("Server is running"));
